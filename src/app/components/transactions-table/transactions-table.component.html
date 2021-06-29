@@ -28,7 +28,7 @@
           <a [routerLink]="['/wallet', tx.toAddress]">{{tx.toAddress}}</a>
 
           <span class="text-muted" *ngIf="blockchainService.addressIsFromCurrentUser(tx.toAddress)">
-            <br><small>(That's yours!)</small>
+            <br><small>(My adress)</small>
           </span>
       </td>
       <td>
