@@ -9,7 +9,7 @@
 	    <input type="text" class="form-control" id="fromAddress" aria-describedby="fromAddressHelp" [(ngModel)]="ownWalletKey.publicKey" disabled>
 	    <small id="fromAddressHelp" class="form-text text-muted">
 	    	
-			Ceci est votre adresse vous ne pouvez pas la changez car vous ne pouvez dépenser que votre propre argent.
+			Ceci est votre adresse (par défaut).
 	    </small>
   	</div>
 
@@ -17,7 +17,7 @@
 	    <label for="toAddress">To address</label>
 	    <input type="text" class="form-control" id="toAddress" aria-describedby="toAddressHelp" [(ngModel)]="newTx.toAddress">
 	    <small id="toAddressHelp" class="form-text text-muted">
-	    	L'adresse du wallet sur lequel vous envoyer votre argent . You can type random text here (if you are not interested in recovering the funds)
+	    	L'adresse du wallet sur lequel vous envoyer votre argent. 
 			
 	    </small>
   	</div>
@@ -26,7 +26,7 @@
 	    <label for="amount">Amount</label>
 	    <input type="number" class="form-control" id="amount" aria-describedby="amountHelp" [(ngModel)]="newTx.amount">
 	    <small id="amountHelp" class="form-text text-muted">
-	    	You can transfer any amount. Account balance is not checked in this demo. Have at it!
+	    	Le montant que vous souhaitez transférer
 	    </small>
   	</div>
 
